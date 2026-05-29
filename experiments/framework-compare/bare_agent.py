@@ -96,8 +96,9 @@ def dispatch(name: str, arguments: str) -> dict:
 def run_bare_agent(question: str) -> dict:
     messages = [{"role": "user", "content": question}]
     trace = []
+    max_steps = 10
 
-    while True:
+    while len(trace) < max_steps:
         response = client.chat.completions.create(
             model=MODEL, messages=messages, tools=TOOLS, tool_choice="auto"
         )
@@ -116,4 +117,4 @@ def run_bare_agent(question: str) -> dict:
             })
             messages.append({"role": "tool", "tool_call_id": tc.id, "content": json.dumps(result)})
 
-    return {"answer": msg.content, "trace": trace, "steps": len(trace)}
+    return {"answer": msg.content or "", "trace": trace, "steps": len(trace)}
