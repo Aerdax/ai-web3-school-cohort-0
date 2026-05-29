@@ -23,7 +23,7 @@ python3 -m venv .venv
 | 维度 | bare_agent.py | graph_agent.py | 结论 |
 |------|--------------|----------------|------|
 | 代码可读性 | while loop 直白，100 行内完整 | 声明式 Graph，需理解 State/Node/Edge 概念 | bare 入门更快，graph 意图更清晰 |
-| 加新工具 | 改 TOOLS 列表 + dispatch if/elif | 只改 TOOLS 列表，ToolNode 自动处理 | graph 扩展更干净 |
+| 加新工具 | 改 TOOLS 列表 + 手写 dispatch（注册表 + getattr）| 只改 TOOLS 列表，ToolNode 自动处理 | graph 扩展更干净 |
 | 定位错误 | 靠手动 print trace，需在 loop 里埋点 | State 流动可查，trace 自动累积在 State | graph 多步骤错误更易排查 |
 | 写回归测试 | mock messages list，边界模糊 | mock State 输入/输出，边界清晰 | graph 更易写测试 |
 | **适合场景** | 简单单轮、工具少、快速原型 | 多步骤、需恢复、长期运行 | 按场景选择 |
