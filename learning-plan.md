@@ -30,7 +30,8 @@
 - [x] 阅读 Handbook：Agent
 - [x] 完成 Agent 最小实践（DAO 提案研究 Agent）
 - [x] 接入 WCB Agent API，完善学习工具链
-- [ ] 阅读 Handbook：Frameworks / MCP
+- [x] 阅读 Handbook：Frameworks（+ 框架对比实验）
+- [ ] 阅读 Handbook：MCP
 - [ ] 完成 Week 2 方向地图（用统一判断框架分析 1–2 个方向）
 - [ ] 准备 5.29 Week 2 例会笔记分享
 - [ ] 每周 Handbook feedback 至少 1 条
@@ -48,7 +49,7 @@
 - [x] 上下文（Context）
 - [x] 检索增强生成（RAG）
 - [x] 智能体（Agent）
-- [ ] 框架（Frameworks）
+- [x] 框架（Frameworks）
 - [ ] 氛围编程（Vibe Coding）
 - [ ] 模型上下文协议（MCP）
 - [ ] 评估（Evaluation）
@@ -91,3 +92,4 @@
 | 2026-05-24 | 推荐 | Prompt + Context 章节 + 两个实践 | 打卡已提交 |
 | 2026-05-26 | 推荐 | RAG 章节 + EIP 文档 RAG 问答系统 | 打卡已提交 |
 | 2026-05-27 | 挑战 | Agent 章节 + DAO 提案研究 Agent + WCB API 接入 | 打卡已提交 |
+| 2026-05-28 | 挑战 | Frameworks 章节 + bare API vs LangGraph 框架对比实验 | 打卡已过期 |
