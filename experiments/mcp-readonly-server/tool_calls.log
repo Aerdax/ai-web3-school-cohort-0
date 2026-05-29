@@ -1,0 +1,18 @@
+2026-05-29 18:00:32,174 [INFO] MCP readonly-docs-server 启动 | root=/Users/liam/Desktop/ai-web3-school-cohort-0
+2026-05-29 18:00:32,177 [INFO] Processing request of type ListToolsRequest
+2026-05-29 18:00:32,178 [INFO] Processing request of type CallToolRequest
+2026-05-29 18:00:32,178 [INFO] tool_call | tool=search_docs | args={'query': 'MCP'}
+2026-05-29 18:00:32,919 [INFO] search_result | query=MCP | hits=10
+2026-05-29 18:00:32,920 [INFO] Processing request of type CallToolRequest
+2026-05-29 18:00:32,921 [INFO] tool_call | tool=get_file | args={'path': 'daily/2026-05-29.md'}
+2026-05-29 18:00:32,921 [INFO] file_read | path=daily/2026-05-29.md | size=3764
+2026-05-29 18:00:32,921 [INFO] Processing request of type CallToolRequest
+2026-05-29 18:00:32,921 [INFO] tool_call | tool=get_file | args={'path': '../../etc/passwd'}
+2026-05-29 18:00:32,922 [WARNING] access_denied | path=../../etc/passwd | resolved=/Users/liam/etc/passwd
+2026-05-29 18:00:45,480 [INFO] MCP readonly-docs-server 启动 | root=/Users/liam/Desktop/ai-web3-school-cohort-0
+2026-05-29 18:00:45,483 [INFO] Processing request of type CallToolRequest
+2026-05-29 18:00:45,483 [INFO] tool_call | tool=get_file | args={'path': 'daily/2026-05-29.md'}
+2026-05-29 18:00:45,483 [INFO] file_read | path=daily/2026-05-29.md | size=3764
+2026-05-29 18:00:45,484 [INFO] Processing request of type CallToolRequest
+2026-05-29 18:00:45,484 [INFO] tool_call | tool=get_file | args={'path': '../../etc/passwd'}
+2026-05-29 18:00:45,484 [WARNING] access_denied | path=../../etc/passwd | resolved=/Users/liam/etc/passwd
