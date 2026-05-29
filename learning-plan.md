@@ -93,4 +93,4 @@
 | 2026-05-26 | 推荐 | RAG 章节 + EIP 文档 RAG 问答系统 | 打卡已提交 |
 | 2026-05-27 | 挑战 | Agent 章节 + DAO 提案研究 Agent + WCB API 接入 | 打卡已提交 |
 | 2026-05-28 | 挑战 | Frameworks 章节 + bare API vs LangGraph 框架对比实验 | 打卡已过期 |
-| 2026-05-29 | 推荐 | MCP 章节 + Week 2 方向地图（企业 AI Agent × Web3 支付） | 打卡已提交 |
+| 2026-05-29 | 挑战 | MCP 章节 + Week 2 方向地图 + 只读 MCP Server 实验 | 打卡已提交 |
