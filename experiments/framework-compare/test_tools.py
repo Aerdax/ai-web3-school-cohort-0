@@ -64,6 +64,12 @@ def test_verify_signature_invalid():
     assert result["valid"] is False
 
 
+def test_verify_signature_malformed():
+    result = tools.verify_signature("hello", "not_a_valid_signature", "0x" + "1" * 40)
+    assert result["valid"] is False
+    assert "error" in result
+
+
 def test_check_token_allowance_structure():
     mock_contract = MagicMock()
     mock_contract.functions.allowance.return_value.call.return_value = 1_000_000

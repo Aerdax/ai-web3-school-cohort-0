@@ -58,12 +58,15 @@ def get_tx_status(tx_hash: str) -> dict:
 
 def verify_signature(message: str, signature: str, expected_address: str) -> dict:
     msg = encode_defunct(text=message)
-    recovered = Account.recover_message(msg, signature=signature)
-    return {
-        "valid": recovered.lower() == expected_address.lower(),
-        "recovered_address": recovered,
-        "expected_address": expected_address,
-    }
+    try:
+        recovered = Account.recover_message(msg, signature=signature)
+        return {
+            "valid": recovered.lower() == expected_address.lower(),
+            "recovered_address": recovered,
+            "expected_address": expected_address,
+        }
+    except Exception as e:
+        return {"valid": False, "error": str(e)}
 
 
 def check_token_allowance(token_address: str, owner: str, spender: str) -> dict:
